@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de Comparacao</title>
+</head>
+<body>
+    
+    <script>
+        var a = 10; // Atribuindo
+        var b = 12;
+        var c = 15;
+        var e = 10;
+
+        if(a == "10"){
+            document.write("(==) O valor de " + a + " e igual a 10!");
+        } else{
+            document.write("(==) O valor de " + a + " nao e igual a 10!");
+        }
+        
+        if(a === "10"){
+            document.write("(===) O valor " + a + " e identico a 10!");
+        } else {
+            document.write("(===) O valor " + a + " nao e identico a 10!");
+        }
+
+        if(a != "10"){
+            document.write("(!=) O valor " + a + " e diferente de 10!");
+        } else {
+            document.write("(!=) O valor " + a + " nao e diferente de 10!");
+        }
+        
+        if(a !== "10"){
+            document.write("(!==) O valor " + a + " nao e identico a 10!");
+        } else {
+            document.write("(!==) O valor " + a + " e identico a 10!");
+        }
+
+        if(a > b){
+            document.write("(>) O valor de " + a + " e maior que " + b);
+        } else {
+            document.write("(>) O valor de " + a + " e menor que " + b);
+        }
+
+        if(a < b){
+            document.write("(<) O valor de " + a + " e menor que " + b);
+        } else {
+            document.write("(<) O valor de " + a + " e maior que " + b);
+        }
+
+        if(a >= e){
+            document.write("(>=) O valor de " + a + " e maior ou igual a " + e);
+        } else {
+            document.write("(>=) O valor de " + a + " nao e maior ou nao e igual a " + e);
+        }
+
+        if(a <= e){
+            document.write("(<=) O valor de " + a + " e menor ou igual a" + e);
+        } else {
+            document.write("(<=) O valor de " + a + " nao e menor tambem nao e igual a" + e);
+        }
+
+        if((a == 11) && (b == 12)){
+            document.write("(&&) O valor " + a + " e igual a 11 e o valor " + b + " e igual a 12!");
+        } else if((a !== 11) && (b == 12)){
+            document.write("(&&) O valor " + a + " nao e igual a 11  e o valor " + b + " e igual a 12!");
+        } else if((a == 11) && (b !== 12)){
+            document.write("(&&) O valor " + a + " e igual a 11  e o valor " + b + " nao e igual a 12!");
+        } else{
+            document.write("(&&) O valor " + a + " nao e igual a 11 e o valor " + b + " nao e igual a 12!");
+        }
+
+        if((a == 11) || (b == 12)){
+            document.write("(||) O valor de " + a + " e igual a 11 ou o valor" + b + " e igual a 12");
+        } else {
+            document.write("(||) Nenhuma das duas condicoes sao verdadeiras, o valor " + a + "nao e igual a 11 e o valor" + b + " nao e igaul a 12.");
+        }
+
+
+    </script>
+</body>
+</html>

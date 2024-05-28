@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    
+
+    <script>
+        var inicio = 1;
+        while (inicio <= 10) {
+            document.write("Numero de clientes: " + inicio + "<br>");
+            inicio++;
+        }
+
+        var prestacao = 1;
+        var qtn_prestacoes = 12;
+        do {
+            document.write("Numero da prestacao: " + prestacao + "<br>");
+            prestacao++;
+        } while(prestacao <= qtn_prestacoes);
+
+        var num_prestacao = 1;
+        var qtn_prestacao = 2;
+        var total = 120;
+        var valor_prestacao = total / qtn_prestacao;
+        do{
+            document.write("Numero da prestacao " + num_prestacao + " valor " + valor_prestacao + "<br>");
+            valor_prestacao++;
+        }while(num_prestacao < qtn_prestacao);
+    </script>
+</body>
+</html>

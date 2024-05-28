@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como criar e usar funcao em JavaScript</title>
+</head>
+<body>
+    <button type="button" onclick="name_funcao()">Chamar funcao</button>
+
+    <button type="button" onclick="somar(4, 3)">Somar</button>
+
+    <script>
+        // Primeiro exemplo:
+        function name_funcao(){
+            alert('Login or Password incorrect!');
+        }
+
+        // Segundo exemplo:
+        function somar(a, b){
+            var total = a + b;
+            alert('Valor da soma ' + total);
+        }
+
+        // Terceiro exemplo:
+        function desconto(){
+            var totalDesc =  a - b;
+            return totalDesc; 
+        }
+        var resultTotalDesc = desconto(7, 5);
+        document.write("Valor final com desconto " + resultTotalDesc + "<br>");
+
+        var soma = (numero1, numero2) => numero1 + numero2;
+        document.write("Valor da soma " + soma(300, 400));
+
+        const total = (numero1, numero2) => {
+            return numero1 + numero2;
+        }
+        document.write("Valor total " + total(300, 700));
+    </script>
+</body>
+</html>

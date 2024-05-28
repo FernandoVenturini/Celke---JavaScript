@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como recuperar dados do input com JavaScript e enviar para novo input no HTML</title>
+</head>
+
+<body>
+    <h2>Formulario</h2>
+    <form action="">
+        Nome: <input type="text" name="form_nome_usuario" value="Cesar"><br>
+        <small>Formulario com valor fixo</small><br>
+
+        <p>Valor do campo: <span id="valor_form_nome_usuario"></span></p>
+    </form>
+
+    <!--FORMUALRIO 2-->
+    <h2>Formulario 2</h2>
+    <form action="">
+        Turma: 
+            <input 
+                type="text" 
+                name="form_turma_usuario" 
+                id="form_turma_usuario" 
+                onkeyup="receberTurmaUsuario()"
+            ><br>
+            <span>Formulario com valor dinamico</span><br><br>
+
+            Campo Recebe Valor: 
+                <input 
+                    type="text" 
+                    name="receber_turma_usuario" id="receber_turma_usuario"
+                ><br>
+
+                <p>
+                    Valor do campo: 
+                    <span id="valor_form_turma_usuario"></span>
+                </p>
+    </form>
+
+    <script src="aula_11.js"></script>
+</body>
+
+</html>
